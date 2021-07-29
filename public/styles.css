@@ -1,0 +1,148 @@
+html {
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: black;    
+}
+
+h1 {
+    color: #FFE81F;
+}
+
+.navbar-brand, .nav-link {
+    color: #FFE81F;    
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color:#FFFFFF;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 232, 31)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: #ffe81f;
+  } 
+
+body {
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: black;    
+}
+
+.home-opac {
+    opacity: 0.4;
+}
+
+.intro-text {
+    color: #FFE81F;
+}
+
+.sl-text {
+    color: red;
+}
+
+.intro-background {
+    background-color: black;
+}
+
+.card-body {
+    border-top: solid #FFE81F;
+}
+
+.card-deck .card {
+    border: solid #FFE81F;
+    max-width: 300px;
+}
+
+.card-playground {
+    border: solid #FFE81F;
+}
+
+.dice-img {
+    height:25px;
+    margin-left: 10px;
+}
+
+.dice-input {
+    max-width: 55px;
+    margin-left: 10px;
+}
+
+.dice-sl-red {
+    color: red;
+    -webkit-transition: color 2.35s ease-out;
+    transition: color 2.35s ease-in-out;
+}
+
+.imperium-top {
+    background-image: url("https://img.icons8.com/ios-glyphs/64/000000/death-star.png");
+}
+
+.list-playground {
+    padding-top: 10px;
+}
+
+.col-playground {
+    margin-bottom: 30px;
+}
+
+   
+.rebellion-icon {
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.death-star-icon {
+    padding:0;
+    margin:0;
+}
+
+.intro-jumbotron {
+    background-color: black;
+}
+
+.container {
+    background-color: black;
+}
+
+.root {
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-align:center;
+    background-color: black;
+}
+
+.rootAdmin {
+    border: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-align:center;
+    background-color: black;
+}
+
+.fullscreen {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .divPlayer{
+      background-color: red;
+      height: 30vH;
+  }
+
+  .playground-info {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  .divSL{
+      background-color: #fde92f;
+      height:30vH;
+  }

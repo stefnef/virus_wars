@@ -1,0 +1,53 @@
+<div class="container-fluid collapse" id="divPlayground">
+    <div class="row">
+        <div class="col-md-6 col-playground intro-background intro-text">
+            <div class="card card-playground">
+                <div class="card-header intro-background ">
+                    <h4 class="my-0 font-weight-normal intro-text intro-background">Rebellion</h4>
+                </div>
+                <div class="card-body intro-background">                         
+                    <% if(!admin) { %>
+                    <p class="card-title pricing-card-title intro-text">Wie viele Würfel hast du:
+                    <input class="dice-input" type="number" min="1" placeholder="1" value="1" id="diceNrPlayer"> </p>               
+                    <button type="button" class="btn btn-lg btn-block btn-dark intro-text" id="dicesRollPlayer">Roll the dices!</button>
+                    <% } else { %>
+                        <p class="card-title pricing-card-title intro-text" id="diceNrPlayerTitle">Anzahl der Würfel: 1</p>
+                    <% } %>
+                    <div class="toast" id="toastPlayer" data-delay="1500" style="position: absolute; top:0; right: 0;">
+                        <div class="toast-header">
+                            Toast Header
+                        </div>                            
+                    </div>
+                    <ul class="list-unstyled intro-text list-playground" id="dicesResultPlayer">                 
+                        <li>Hier steht dein Würfelergebnis</li>                            
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-playground intro-background intro-text">
+            <div class="card card-playground">
+                <div class="card-header intro-background ">
+                    <h4 class="my-0 font-weight-normal intro-text intro-background">Gefahrenpool</h4>
+                </div>
+                <div class="card-body intro-background">                        
+                    <% if(admin) { %>
+                        <p class="card-title pricing-card-title intro-text">Anzahl der Würfel:
+                        <input class="dice-input" type="number" min="1" placeholder="2" value="2"  id="diceNrSL"> </p>
+                        <button type="button" class="btn btn-lg btn-block btn-dark intro-text" id="dicesRollSL">Roll the dices!</button>
+                        <button type="button" class="btn btn-lg btn-block btn-dark intro-text" id="showDicesToPlayer">Show to players</button>
+                    <% } else { %>
+                        <p class="card-title pricing-card-title intro-text" id="diceNrSLTitle">Anzahl der Würfel: 2</p>
+                    <% } %>
+                    <div class="toast" id="toastSL" data-delay="1500" style="position: absolute; top:0; right: 0;">
+                        <div class="toast-header">
+                            Toast Header
+                        </div>                            
+                    </div>
+                    <ul class="list-unstyled intro-text list-playground" id="dicesResultSL">                 
+                        <li>Hier stehen die Würfel des Gefahrenpools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

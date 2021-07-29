@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar', {logout: true}) %>
+
+<div class="root"> 
+    <% if(admin) { %>
+    <button id="videoStart" class="btn btn-dark intro-text">Start Video</button>
+    <button id="initPlayground" class="btn btn-dark intro-text">Next Step >></button>
+    <br><br>      
+    <% } %>  
+
+    <div class="jumbotron jumbotron-fluid intro-jumbotron collapse show" id="collapseIntro">
+        <div class="container">
+          <h1 class="display-4">Virus Wars</h1>
+          <p class="lead intro-text">Es ist schon lange her, dass du in der Rebellion aktiv warst. <br>
+                          Zu viel lief beim letzten Job schief!<br>
+                          Doch nun wird es Zeit für einen allerletzten Job!<br>
+                          Kann es losgehen?</p>
+         </div>
+         <button id="btnCollapse" type="button" data-toggle="collapse" data-target="#collapseIntro" class="btn btn-dark intro-text">Ja, ich bin bereit!</button>
+    </div>       
+
+    <div class="embed-responsive embed-responsive-16by9 collapse show" id="divVideo">
+    <video id="myVideo"> <!--width="320" height="176">-->
+        <source src="<%= videoSrc %>" type="video/webm">
+        Your browser does not support HTML5 video.
+    </video>
+    </div>
+
+    <%- include('playground') %>
+
+</div>      
+<script src="/socket.io/socket.io.js"></script>
+<script>const username=`<%=username%>`
+        const socket = io.connect(`<%=socketAdr%>`, { withCredentials: true,
+                                                      extraHeaders: { "my-custom-header": "abcd" }
+                                                    });
+</script>
+<script src ="/clientCommon.js"></script>
+<% if(admin) { %>
+    <script src="/clientAdmin.js"></script>
+    <% } else { %>
+    <script src="/client.js"></script>
+<% } %>
+<%- include('partials/footer') %>
